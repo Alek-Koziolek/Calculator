@@ -18,22 +18,30 @@ body {
   user-select: none;
 }
 
+#calculator-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #calculator-body {
   width: 300px;
   aspect-ratio: 9/14;
-  margin: 100px auto 0 auto;
   background-color: var(--body-color);
   border-radius: 10px 10px 0 0;
   box-shadow: 5px 10px 40px;
 }
 
 #calculator-body::after {
+  display: block;
   content: "";
-  width: inherit;
+  width: 300px;
   height: 20px;
-  position: absolute;
+  position: relative;
   background-color: var(--body-color);
-  top: 561.666px;
+  top: 10px;
   border-radius: 0 0 50% 50%;
 }
 
